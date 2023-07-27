@@ -13,6 +13,26 @@ public class Reto_0 {
     }
 }
 
+//public class Reto_0 {
+//    public Reto_0() {
+//    }
+//
+//    public static void main(String[] args) {
+//        for(int i = 1; i < 101; ++i) {
+//            if (i % 3 == 0 && i % 5 == 0) {
+//                System.out.println("Por el culo te la hinco");
+//            } else if (i % 5 == 0) {
+//                System.out.println("te la hinco");
+//            } else if (i % 3 == 0) {
+//                System.out.println("Por el culo");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+//
+//    }
+//}
+
 
 
 /*WHILE n<101, entramos:
