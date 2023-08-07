@@ -1,6 +1,8 @@
+package Reto_1;
+
 import javax.swing.*;
 import java.util.Hashtable;
-public class Reto_1 {
+public class alejandrors10_1 {
     public static void main(String[] args) {
 
         String texto = JOptionPane.showInputDialog("Mensaje a encriptar:").toUpperCase();

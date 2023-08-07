@@ -1,3 +1,5 @@
+package Reto_1;
+
 import java.util.Scanner;
 
 public class Reto_1_Robe {

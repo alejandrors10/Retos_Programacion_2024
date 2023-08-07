@@ -1,4 +1,6 @@
-public class Reto_0 {
+package Reto_0;
+
+public class alejandrors10_0 {
     public static void main(String[] args) {
 
         for (int i=1;i<101;i++){
