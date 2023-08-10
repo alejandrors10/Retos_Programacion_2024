@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.util.HashMap;
 public class AlejandroRS10 {
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
         //Creamos el diccionario de puntos
         HashMap <Integer,String> diccionario = new HashMap<>();
