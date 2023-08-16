@@ -1,42 +1,133 @@
 package Reto_3;
 
+import javax.swing.*;
 import java.util.Random;
 
 public class AlejandroRS10 {
-        public static void main(String[] args) {
-            Random random = new Random();
+    private static final Random random=new Random();
 
-            int minCifras = 8;
-            int maxCifras = 16;
+    public static void main(String[] args) {
 
-            int cifras = random.nextInt(maxCifras - minCifras + 1) + minCifras;
 
-            long randomNumber = generateRandomNumber(cifras);
+        int i=Integer.parseInt(JOptionPane.showInputDialog("Elige: Todos (1), Letras y números (2), " +
+                "Números y símbolos (3), Letras y símbolos (4), Letras (5), Números (6), Símbolos (7)"));
 
-            System.out.println("Número aleatorio con " + cifras + " cifras: " + randomNumber);
+        switch (i) {
+            case 1 -> System.out.println(generateRandomPasswordAll(generateRandomLenght()));
+            case 2 -> System.out.println(generateRandomPasswordLetNum(generateRandomLenght()));
+            case 3 -> System.out.println(generateRandomPasswordNumSym(generateRandomLenght()));
+            case 4 -> System.out.println(generateRandomPasswordLetSym(generateRandomLenght()));
+            case 5 -> System.out.println(generateRandomPasswordLet(generateRandomLenght()));
+            case 6 -> System.out.println(generateRandomPasswordNum(generateRandomLenght()));
+            case 7 -> System.out.println(generateRandomPasswordSym(generateRandomLenght()));
+            default -> System.out.println("Elige un número entre 1 y 7");
         }
 
-        public static long generateRandomNumber(int cifras) {
-            Random random = new Random();
-            StringBuilder numberStr = new StringBuilder();
+    }
 
-            for (int i = 0; i < cifras; i++) {
-                int digit = random.nextInt(10); // Genera un dígito aleatorio entre 0 y 9
-                numberStr.append(digit);
-            }
+    public static int generateRandomLenght(){
 
-            return Long.parseLong(numberStr.toString());
-        }
+        int minCifras = 8;
+        int maxCifras = 16;
+
+        return random.nextInt(maxCifras - minCifras + 1) + minCifras;
     }
 
 
+    public static String generateRandomPasswordAll(int length) {
+        String symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=[]{}|;:,.<>?";
 
-/*
- * Escribe un programa que sea capaz de generar contraseñas de forma aleatoria.
- * Podrás configurar generar contraseñas con los siguientes parámetros:
- * - Longitud: Entre 8 y 16.
- * - Con o sin letras mayúsculas.
- * - Con o sin números.
- * - Con o sin símbolos.
- * (Pudiendo combinar todos estos parámetros entre ellos)
- */
+        StringBuilder password = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(symbols.length());
+            char symbol = symbols.charAt(index);
+            password.append(symbol);
+        }
+
+        return password.toString();
+    }
+
+    public static String generateRandomPasswordLetNum(int length) {
+        String symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+        StringBuilder password = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(symbols.length());
+            char symbol = symbols.charAt(index);
+            password.append(symbol);
+        }
+
+        return password.toString();
+    }
+
+    public static String generateRandomPasswordLet(int length) {
+        String symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        StringBuilder password = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(symbols.length());
+            char symbol = symbols.charAt(index);
+            password.append(symbol);
+        }
+
+        return password.toString();
+    }
+
+    public static String generateRandomPasswordLetSym(int length) {
+        String symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_-+=[]{}|;:,.<>?";
+
+        StringBuilder password = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(symbols.length());
+            char symbol = symbols.charAt(index);
+            password.append(symbol);
+        }
+
+        return password.toString();
+    }
+
+    public static String generateRandomPasswordNumSym(int length) {
+        String symbols = "0123456789!@#$%^&*()_-+=[]{}|;:,.<>?";
+
+        StringBuilder password = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(symbols.length());
+            char symbol = symbols.charAt(index);
+            password.append(symbol);
+        }
+
+        return password.toString();
+    }
+
+    public static String generateRandomPasswordSym(int length) {
+        String symbols = "!@#$%^&*()_-+=[]{}|;:,.<>?";
+
+        StringBuilder password = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(symbols.length());
+            char symbol = symbols.charAt(index);
+            password.append(symbol);
+        }
+
+        return password.toString();
+    }
+    public static String generateRandomPasswordNum(int length) {
+        String symbols = "0123456789";
+
+        StringBuilder password = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            int index = random.nextInt(symbols.length());
+            char symbol = symbols.charAt(index);
+            password.append(symbol);
+        }
+
+        return password.toString();
+    }
+}
