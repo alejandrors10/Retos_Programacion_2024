@@ -1,4 +1,4 @@
-package Reto_2;
+package Java.Reto_2;
 
 import javax.swing.*;
 import java.util.HashMap;

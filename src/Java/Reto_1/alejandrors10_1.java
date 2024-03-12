@@ -1,4 +1,4 @@
-package Reto_1;
+package Java.Reto_1;
 
 import javax.swing.*;
 import java.util.Hashtable;

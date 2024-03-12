@@ -1,8 +1,10 @@
+package Java.Reto_3;
+
 import javax.swing.*;
 import java.util.Random;
 
-public class Pruebas {
-        private static final Random random=new Random();
+public class AlejandroRS10 {
+    private static final Random random=new Random();
 
     public static void main(String[] args) {
 
@@ -18,6 +20,7 @@ public class Pruebas {
             case 5 -> System.out.println(generateRandomPasswordLet(generateRandomLenght()));
             case 6 -> System.out.println(generateRandomPasswordNum(generateRandomLenght()));
             case 7 -> System.out.println(generateRandomPasswordSym(generateRandomLenght()));
+            default -> System.out.println("Elige un número entre 1 y 7");
         }
 
     }
@@ -128,16 +131,3 @@ public class Pruebas {
         return password.toString();
     }
 }
-
-
-
-
-/*
- * Escribe un programa que sea capaz de generar contraseñas de forma aleatoria.
- * Podrás configurar generar contraseñas con los siguientes parámetros:
- * - Longitud: Entre 8 y 16.
- * - Con o sin letras mayúsculas.
- * - Con o sin números.
- * - Con o sin símbolos.
- * (Pudiendo combinar todos estos parámetros entre ellos)
- */

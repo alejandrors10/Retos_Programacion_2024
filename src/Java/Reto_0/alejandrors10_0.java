@@ -1,4 +1,4 @@
-package Reto_0;
+package Java.Reto_0;
 
 public class alejandrors10_0 {
     public static void main(String[] args) {
@@ -15,8 +15,8 @@ public class alejandrors10_0 {
     }
 }
 
-//public class Reto_0 {
-//    public Reto_0() {
+//public class Java.Reto_0 {
+//    public Java.Reto_0() {
 //    }
 //
 //    public static void main(String[] args) {
