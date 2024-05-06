@@ -1,6 +1,8 @@
 package Java.w3resources.Basics1;
 
 
+import java.util.Scanner;
+
 //18. Write a Java program to multiply two binary numbers.
 //        Input Data:
 //        Input the first binary number: 10
@@ -10,14 +12,41 @@ package Java.w3resources.Basics1;
 //        Product of two binary numbers: 110
 public class Reto18 {
 
-    public static int multiplicar (int )
-    public static int sumar(int primero, int segundo) {
+    public static long multiplicar (long primero, long segundo){
 
-        int binary1=primero;
-        int binary2=segundo;
+        Long longitud=segundo;
+        String l=longitud.toString();
+        long sumandos[]=new long[l.length()];
+        int i=0;
+        int salto=1;
+        long factor2=segundo;
+        long resultado=0L;
+
+        //Multiplicamos el factor1 por las unidades del factor2, el sumando se guarda en un array.
+        // Pasamos a las décimas eliminando las unidades del factor2 y multiplicando cada siguiente sumando por 10^i
+        while(factor2>0) {
+            sumandos[i] = primero * (factor2 % 10)* salto;
+            factor2 = factor2 / 10;
+            i++;
+            salto=salto*10;
+        }
+
+        //Recorremos el array sumando cada sumando con el siguiente,
+        // usando el método del ejercicio anterior, al que modificamos
+        // ligeramente para devolver long funcionales en vez de Strings
+        for (int j=0;j<sumandos.length;j++) {
+            resultado=Reto18.sumar(resultado,sumandos[j]);
+        }
+
+        return resultado;
+    }
+    public static long sumar(long primero, long segundo) {
+
+        long binary1=primero;
+        long binary2=segundo;
         int i = 0;
-        int remainder = 0;
-        int[] sum = new int[20];
+        long remainder = 0;
+        long[] sum = new long[20];
 
         while (binary1 != 0 || binary2 != 0) {
             sum[i++] = ((binary1 % 10 + binary2 % 10 + remainder) % 2); // Se añade al array la suma de las unidades más el remainder. Si la suma es 0=0, si 1=1, si 2=0, si 3=1. Además, el índice del array aumenta en 1 cada vuelta
@@ -31,24 +60,30 @@ public class Reto18 {
             sum[i] = remainder;
         }
 
-        StringBuilder sb = new StringBuilder(); // Utilizamos StringBuilder para construir el número en orden inverso
+        // Utilizamos StringBuilder para construir el número en orden inverso
+        StringBuilder sb = new StringBuilder();
 
         // Concatenar cada dígito en orden inverso al StringBuilder
         for (int j = sum.length - 1; j >= 0; j--) {
             sb.append(sum[j]);
         }
 
-        // Convertir el StringBuilder a un número entero
+        // Convertir el StringBuilder a long
 
-        return Integer.parseInt(sb.toString());
+        return Long.parseLong(sb.toString());
     }
 
     public static void main(String[] args) {
 
-    System.out.println(sumar(101,110));
+        // Creamos escáner y entrada de datos
+        Scanner in=new Scanner(System.in);
+        System.out.println("Introduce el primer factor: ");
+        int primero=in.nextInt();
+        System.out.println("Introduce el segundo factor: ");
+        int segundo=in.nextInt();
 
+        System.out.println("El resultado es: " + multiplicar(primero,segundo));
 
-}
-
+    }
 
 }

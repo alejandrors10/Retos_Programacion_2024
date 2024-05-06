@@ -7,3 +7,15 @@ W
 'src/Java/w3resources/Basics1/Reto3.java,8\4\84ba916305e96b1a374f70163851a9a8a920b1a6
 X
 (src/Java/w3resources/Basics1/Reto13.java,2\f\2f7ed1fa391989b33aac378aaa6c107527b4efdf
+X
+(src/Java/w3resources/Basics1/Reto15.java,a\b\ab51b585ce73dca946a9945efa675271e9027335
+X
+(src/Java/w3resources/Basics1/Reto14.java,4\4\44f26a57618a4dd7c74d4154c35ec5ce7a1765f3
+X
+(src/Java/w3resources/Basics1/Reto12.java,f\9\f9fb6666a093a086883583dc8df2c6675b488839
+X
+(src/Java/w3resources/Basics1/Reto11.java,a\9\a91f83ad57b99f19563dd8041688c5b23824fdab
+X
+(src/Java/w3resources/Basics1/Reto10.java,d\2\d2f40d3e5fc050b94f55aeb92b54a783d876a205
+W
+'src/Java/w3resources/Basics1/Reto9.java,3\4\340368c5d6c42a3e235f3bcbeedff10b09111208
