@@ -21,3 +21,5 @@ W
 'src/Java/w3resources/Basics1/Reto9.java,3\4\340368c5d6c42a3e235f3bcbeedff10b09111208
 X
 (src/Java/w3resources/Basics1/Reto18.java,3\a\3a14f739d8395b4bcbaadc605309dae8998b1f69
+X
+(src/Java/w3resources/Basics1/Reto17.java,9\a\9a93b5f1890920e65659dac95642bdcebc14ad73

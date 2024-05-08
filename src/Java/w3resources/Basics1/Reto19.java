@@ -13,7 +13,6 @@ public class Reto19 {
 
     public static void main(String[] args) {
 
-
         //Instanciamos valores binarios, número resultado, número a transformar
         int[] b = {256,128,64, 32, 16, 8, 4, 2, 1};
         Integer resultado[] = new Integer [9];
