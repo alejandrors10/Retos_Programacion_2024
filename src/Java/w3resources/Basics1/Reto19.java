@@ -1,6 +1,6 @@
 package Java.w3resources.Basics1;
 
-//19. Write a Java program to convert an integer number to a binary number.
+//19. Write a Java program to convert an decimal number to a binary number.
 //        Input Data:
 //        Input a Decimal Number : 5
 //        Expected Output
