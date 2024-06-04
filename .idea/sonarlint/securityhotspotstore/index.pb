@@ -27,3 +27,7 @@ X
 (src/Java/w3resources/Basics1/Reto22.java,e\4\e479aecc7d3da14e2cd19868e4b70b0c5108df53
 X
 (src/Java/w3resources/Basics1/Reto21.java,9\f\9f609cc33b01b7b41de16dffafaa67fd051de17a
+X
+(src/Java/w3resources/Basics1/Reto23.java,4\9\49dece801ebcbcd751b04004d12840c09bf90717
+X
+(src/Java/w3resources/Basics1/Reto20.java,2\2\22c8b40bff6f9d872af851f28a45cd05b2f6f79a

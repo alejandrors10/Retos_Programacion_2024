@@ -1,0 +1,14 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì€ñšùÿÿÿÿ8µÄÆõ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ãê´úÿÿÿÿ8µÄÆõ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¯—÷ıÿÿÿÿ8·ÄÆõ1
+m	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì†ÅÉ8·ÄÆõ1
+m	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì†ÅÉ8·ÄÆõ1
+r	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Ñòƒÿÿÿÿÿ8·ÄÆõ1
+r	java:S117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÕˆíÒúÿÿÿÿ8·ÄÆõ1
+>
+java:S1643)"Use a StringBuilder instead.(œ¤½¸ûÿÿÿÿ8ÆÄÆõ1
+a
+java:S1659!"DDeclare "num_dec" and all following declarations on a separate line.(Ì†ÅÉ8¦ÄÆõ1
+L
+java:S1481!"/Remove this unused "num_dec_or" local variable.(Ì†ÅÉ8²ÄÆõ1
