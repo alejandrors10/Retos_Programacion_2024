@@ -1,4 +1,4 @@
-package Java.Reto_4;
+package Java.Moure.Reto_6;
 
 public class AlejandroRS10 {
 }

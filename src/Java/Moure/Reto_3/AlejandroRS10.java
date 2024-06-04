@@ -1,4 +1,4 @@
-package Java.Reto_3;
+package Java.Moure.Reto_3;
 
 import javax.swing.*;
 import java.util.Random;

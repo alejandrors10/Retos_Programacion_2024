@@ -1,4 +1,4 @@
-package Java.Reto_1;
+package Java.Moure.Reto_1;
 
 import java.util.Scanner;
 
