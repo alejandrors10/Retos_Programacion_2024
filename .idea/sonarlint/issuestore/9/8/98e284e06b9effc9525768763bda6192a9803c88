@@ -1,0 +1,13 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ì€ñšùÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ãê´úÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¯—÷ıÿÿÿÿ
+k	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç¬ÂÏıÿÿÿÿ
+f	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á ¦İ
+f	java:S117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«Ğ»ñ
+2
+java:S1643("Use a StringBuilder instead.(ãç­Õ
+Y
+java:S1854">Remove this useless assignment to local variable "num_bin_or".(·ãê´úÿÿÿÿ
+J
+java:S1481"/Remove this unused "num_bin_or" local variable.(·ãê´úÿÿÿÿ
