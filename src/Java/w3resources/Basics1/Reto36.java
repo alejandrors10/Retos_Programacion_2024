@@ -16,11 +16,13 @@ import java.util.Scanner;
 //        The distance between those points is: 1480.0848451069087 km
 public class Reto36 {
 
-    public static double calc_distancia(double x1 ,double y1 ,double x2 ,double y2){
+    public static double calc_distancia(double y1 ,double x1 ,double y2 ,double x2){
 
-        final double radius=6371.01;
+        double radius=6371.01;
         //d = radius * arccos(sin(x1) * sin(x2) + cos(x1) * cos(x2) * cos(y1 - y2))
-        return radius * Math.acos(Math.sin(Math.toRadians(x1)) * Math.sin(Math.toRadians(x2)) + Math.cos(Math.toRadians(x1)) * Math.cos(Math.toRadians(x2)) * Math.cos(Math.toRadians(y1) - Math.toRadians(y2)));
+        // return earthRadius * Math.acos(Math.sin(lat1) * Math.sin(lat2) + Math.cos(lat1) * Math.cos(lat2) * Math.cos(lon1 - lon2));
+
+        return radius * Math.acos(Math.sin(Math.toRadians(y1)) * Math.sin(Math.toRadians(y2)) + Math.cos(Math.toRadians(y1)) * Math.cos(Math.toRadians(y2)) * Math.cos(Math.toRadians(x1) - Math.toRadians(x2)));
     }
 
     public static void main(String[] args) {
@@ -35,7 +37,7 @@ public class Reto36 {
         System.out.println("Introduce la longitud de la segunda coordenada:");
         double x2=sc.nextDouble();
 
-        System.out.println("La distancia entre las coordenadas es: "+calc_distancia(x1,y1,x2,y2));
+        System.out.println("La distancia entre las coordenadas es: "+calc_distancia(y1,x1,y2,x2));
 
     }
 }
