@@ -55,3 +55,9 @@ X
 .src/Java/w3resources/Basics1/Reto36_extra.java,f\2\f2157bdf921528f75d238f7d37d8867af0e30ee7
 X
 (src/Java/w3resources/Basics1/Reto36.java,9\9\9975410c572986041ad75cbea467bdc44efcc80c
+X
+(src/Java/w3resources/Basics1/Reto37.java,b\a\bab884536f71979769a9b8fcb7213690759dc054
+X
+(src/Java/w3resources/Basics1/Reto42.java,4\1\410936eb0f617b6179b8ac621f0238990635f811
+K
+Retos_Programacion_2024.iml,b\e\be50fc436db5d869ea0e27126536219c5a06f938

@@ -15,10 +15,10 @@ public class Reto5 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("introduce un factor : ");
-        int num1 = Integer.parseInt(input.next());
+        int num1 = input.nextInt();
 
         System.out.print("Introduce otro factor: ");
-        int num2 = Integer.parseInt(input.next());
+        int num2 = input.nextInt();
 
         int resultado = num1 * num2;
 
